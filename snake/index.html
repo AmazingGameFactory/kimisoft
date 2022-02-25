@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="canonical" href="https://kimisoft.com/snake/">
+<title>Amazing Snake - the legend is back!</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<link href="font/stylesheet.css" rel="stylesheet" type="text/css">
+<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<link href="css/bootstrap-responsive.min.css" rel="stylesheet" type="text/css">
+<link href="css/styles.css" rel="stylesheet" type="text/css">
+<link href="css/media-queries.css" rel="stylesheet" type="text/css">
+<link href="fancybox/jquery.fancybox-1.3.4.css" rel="stylesheet" type="text/css" media="screen">
+<link href="img/favicon.ico" rel="shortcut icon" type="image/x-icon">
+<link href="css/css_fonts_googleapis_family_exo.css" rel="stylesheet" type="text/css">
+
+<!--[if lt IE 9]>
+<script src="js/css3-mediaqueries.js"></script>
+<script src="js/html5.js"></script>
+<![endif]-->
+
+<!-- <script type="text/javascript" src="//www.freeprivacypolicy.com/public/cookie-consent/3.1.0/cookie-consent.js"></script>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded', function () {
+cookieconsent.run({"notice_banner_type":"headline","consent_type":"express","palette":"dark","language":"en","website_name":"www.matchstickpuzzle.com","cookies_policy_url":"https://www.matchstickpuzzle.com/cookies-policy.html"});
+});
+</script>
+
+<noscript>Cookie Consent by <a href="https://www.FreePrivacyPolicy.com/free-cookie-consent/" rel="nofollow noopener">FreePrivacyPolicy.com</a></noscript> -->
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-9G08ZJGDL4"></script>
+
+<script>
+  window.dataLayer = window.dataLayer || []
+  function gtag() {
+    dataLayer.push(arguments)
+  }
+  gtag('js', new Date())
+
+  // defines window.localstorage key
+  const GA_LOCAL_STORAGE_KEY = 'ga:clientId'
+
+  // checks if localstorage is available
+  if (window.localStorage) {
+    // checks if user was already connected and loads client_id from localstorage
+    if (localStorage.getItem(GA_LOCAL_STORAGE_KEY)) {
+      // creates new tracker with same client_id as the last time the user visited
+      gtag('js', new Date())
+      gtag('config', 'G-9G08ZJGDL4', {
+        anonymize_ip: true,
+        send_page_view: true,
+        client_storage: 'none',
+        client_id: localStorage.getItem(GA_LOCAL_STORAGE_KEY),
+      })
+    } else {
+      // creates client_id and saves it in localStorage -> currently random number better would be a uuid
+
+      window.localStorage.setItem(GA_LOCAL_STORAGE_KEY, (new Date()).getTime().toString(36) + Math.random().toString(36).slice(2))
+      // creates new tracker with the new client_id
+      gtag('js', new Date())
+      gtag('config', 'G-9G08ZJGDL4', {
+        anonymize_ip: true,
+        send_page_view: true,
+        client_storage: 'none',
+        client_id: localStorage.getItem(GA_LOCAL_STORAGE_KEY),
+      })
+    }
+  }
+</script>
+
+</head>
+<body data-spy="scroll">
+<!-- TOP MENU NAVIGATION -->
+<div class="navbar navbar-fixed-top">
+  <div class="navbar-inner">
+    <div class="container"> <a class="brand pull-left" href="#"> Amazing Snake - the legend is back! </a> <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </a>
+      <div class="nav-collapse collapse">
+        <ul id="nav-list" class="nav pull-right">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">Videos</a></li>
+          <li><a href="#updates">Updates</a></li>
+          <li><a href="#screenshots">Screenshots</a></li>
+          <li><a href="#contact">About</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- MAIN CONTENT -->
+<div class="container content container-fluid" id="home">
+  <!-- HOME -->
+  <div class="row-fluid">
+    <!-- PHONES IMAGE FOR DESKTOP MEDIA QUERY -->
+    <div class="span5 visible-desktop"> <img src="img/scena_pionowa_mini.jpg" alt=""> </div>
+    <!-- APP DETAILS -->
+    <div class="span7">
+      <!-- ICON -->
+      <div class="visible-desktop" id="icon"> <img src="img/alt_ikona_87x87.png" alt="" width="87"> </div>
+      <!-- APP NAME -->
+      <div id="app-name">
+        <h2>Amazing Snake</h2>
+      </div>
+      <!-- VERSION -->
+      <div id="version"> <span class="version-top label label-inverse">Version 1.0.15</span> </div>
+      <!-- TAGLINE -->
+      <div id="tagline"> The classic snake in the new shape! (iOS & Android) </div>
+      <!-- PHONES IMAGE FOR TABLET MEDIA QUERY -->
+      <div class="hidden-desktop" id="phones"> <img src="img/scena_pionowa_mini.jpg" alt=""> </div>
+      <!-- DESCRIPTION -->
+      <div id="description"> Prepare yourself for this exciting, yet challenging game. Control cute monsters in the mission to eat all you can see! The game offers good balance between casual and fast-paced game - with this title you will never get boring!
+        <br>
+        <b>Try it now and have fun!</b>
+      </div>
+      <!-- FEATURES -->
+      <ul id="features">
+        <li></li>
+        <li>Complete hundreds of levels in different worlds! See where the journey ends by yourself!</li>
+        <li>Use Turbo Mode to destroy crates and get all the reward! Going turbo means going fast, so watch out for walls!</li>
+        <li>Use Turtle Mode in the most difficult sections to slow down your monsters.</li>
+        <li>Get ready for gradually rising difficulty. Fight for better times to get even more coins!</li>
+        <li>Use additional items to make playing easier! Want to destroy all the crates at once? Jump somewhere? No problem!</li>
+        <li>Choose the input mode, which suits your better - the default two-button vs four-button direction control.</li>
+      </ul>
+      <!-- DOWNLOAD & REQUIREMENT BOX -->
+      <!-- <div class="download-box"> <a href="#"><img src="img/available-on-the-app-store.png" alt=""></a> </div> -->
+      <div class="download-box"> <a href="https://play.google.com/store/apps/details?id=com.amazinggamefactory.asnake&referrer=utm_source%3Dmywebsite%26utm_campaign%3Dmyclick">
+        <img src="img/Google_Play_Store_badge_EN_220x65.png" alt=""></a> </div>
+      <div class="download-box"> <a href="">
+          <img src="img/AppStore_220x65.png" alt=""></a> </div>
+      <!-- <div class="download-box"> <strong><br>&lt--- Download it here</strong></div> -->
+
+      <!-- <div class="download-box"> <strong>Requirements:</strong><br>
+        Compatible with iPhone and iPod touch. Requires iPhone OS 2.2 or later. WiFi, Edge, or 3G network connection sometimes required. </div> -->
+      <!-- <div class="download-box"> <strong>Requirements:</strong><br>
+        Requires Android 2.3 and higher. WiFi, Edge, or 3G network connection sometimes required. </div> -->
+    </div>
+  </div>
+  <!-- ABOUT & UPDATES -->
+  <div class="row-fluid" id="about">
+    <div class="span6">
+      <h2 class="page-title" id="scroll_up"> Videos <a href="#home" class="arrow-top"> <img src="img/arrow-top.png" alt=""> </a> </h2>
+
+      <iframe
+        width="360"
+        height="240"
+        src="https://www.youtube.com/embed/x4diCTjvvG0"
+        srcdoc="<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}
+          span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black}</style>
+          <a href=https://www.youtube.com/embed/x4diCTjvvG0?autoplay=0>
+            <img src=https://img.youtube.com/vi/x4diCTjvvG0/hqdefault.jpg alt='Video1'><span>▶</span></a>"
+        frameborder="0"
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+        title="Video1">
+      </iframe>
+
+      <!-- <iframe
+      width="360"
+      height="240"
+      src="https://www.youtube.com/embed/p7-4PmIkUzw"
+      srcdoc="<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}
+        span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black}</style>
+        <a href=https://www.youtube.com/embed/p7-4PmIkUzw?autoplay=0>
+          <img src=https://img.youtube.com/vi/p7-4PmIkUzw/hqdefault.jpg alt='Video1'><span>▶</span></a>"
+      frameborder="0"
+      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen
+      title="Video1">
+    </iframe> -->
+
+    </div>
+    <div class="span6 updates" id="updates">
+      <h2 class="page-title" id="scroll_up"> Updates <a href="#home" class="arrow-top"> <img src="img/arrow-top.png" alt=""> </a> </h2>
+      <!-- UPDATES & RELEASE NOTES -->
+      <!-- <h3 class="version">Version 1.05</h3>
+      <span class="release-date">Released on April 18th, 2021</span>
+      <ul>
+        <li><span class="label fix">FIX</span>the Puzzle of the Day notifications are now more user-friendly
+          (no sound and vibration when the notification is up).
+          Of course you can still turn them off completely from the main menu screen</li>
+        <li><span class="label fix">FIX</span>music and sound levels are little higher to make sure,
+          you can hear it well using smartphone's speaker as well</li>
+      </ul>
+      <hr>
+      <h3 class="version">Version 1.03 and 1.04</h3>
+      <span class="release-date">Released on April 9th, 2021</span>
+      <ul>
+        <li><span class="label new">NEW</span>The second game, Amazing Sticks 2 is now included for free!</li>
+        <li><span class="label new">NEW</span>Entirely new Puzzle of the Day section! (get the new puzzles to solve everyday)</li>
+        <li><span class="label new">NEW</span>Even more background music to enjoy!</li>
+      </ul>
+      <hr> -->
+      <h3 class="version">Version 1.0.15</h3>
+      <span class="release-date">Released on March 1st, 2022</span>
+      <ul>
+        <li><span class="label fix">NEW</span>Initial Release</li>
+        <!-- <li><span class="label label-info ">FIX</span>Few minor fixes</li> -->
+      </ul>
+    </div>
+  </div>
+  <!-- SCREENSHOTS -->
+  <div class="row-fluid" id="screenshots">
+    <h2 class="page-title" id="scroll_up"> Screenshots <a href="#home" class="arrow-top"> <img src="img/arrow-top.png" alt=""> </a> </h2>
+    <!-- SCREENSHOT IMAGES ROW 1-->
+    <ul class="thumbnails">
+      <li class="span3"> <a href="img/zrzut1.jpg" rel="gallery" loading="lazy" class="thumbnail"> <img src="img/zrzut1mini.jpg" loading="lazy" alt=""> </a>
+      <li class="span3"> <a href="img/zrzut2.jpg" rel="gallery" loading="lazy" class="thumbnail"> <img src="img/zrzut2mini.jpg" loading="lazy" alt=""> </a> </li>
+      <li class="span3"> <a href="img/zrzut3.jpg" rel="gallery" loading="lazy" class="thumbnail"> <img src="img/zrzut3mini.jpg" loading="lazy" alt=""> </a> </li>
+      <li class="span3"> <a href="img/zrzut4.jpg" rel="gallery" loading="lazy" class="thumbnail"> <img src="img/zrzut4mini.jpg" loading="lazy" alt=""> </a> </li>
+    </ul>
+    <!-- SCREENSHOT IMAGES ROW 2-->
+    <ul class="thumbnails">
+      <li class="span3"> <a href="img/zrzut5.jpg" rel="gallery" loading="lazy" class="thumbnail"> <img src="img/zrzut5mini.jpg" loading="lazy" alt=""> </a> </li>
+      <li class="span3"> <a href="img/zrzut6.jpg" rel="gallery" loading="lazy" class="thumbnail"> <img src="img/zrzut6mini.jpg" loading="lazy" alt=""> </a> </li>
+      <li class="span3"> <a href="img/zrzut7.jpg" rel="gallery" loading="lazy" class="thumbnail"> <img src="img/zrzut7mini.jpg" loading="lazy" alt=""> </a> </li>
+      <li class="span3"> <a href="img/zrzut8.jpg" rel="gallery" loading="lazy" class="thumbnail"> <img src="img/zrzut8mini.jpg" loading="lazy" alt=""> </a> </li>
+    </ul>
+
+    <!-- <ul class="thumbnails">
+      <li class="span3"> <a href="img/zrzut9.jpg" rel="gallery" loading="lazy" class="thumbnail"> <img src="img/zrzut9mini.jpg" loading="lazy" alt=""> </a> </li>
+      <li class="span3"> <a href="img/zrzut1.jpg" rel="gallery" loading="lazy" class="thumbnail"> <img src="img/zrzut10mini.jpg" loading="lazy" alt=""> </a> </li>
+    </ul> -->
+  </div>
+  <!-- CONTACT -->
+  <div class="row-fluid" id="contact">
+    <h2 class="page-title" id="scroll_up"> About <a href="#home" class="arrow-top"> <img src="img/arrow-top.png" alt=""> </a> </h2>
+    <!-- CONTACT INFO -->
+    <div class="span10" id="contact-info">
+      <p>Amazing Snake is a game created by Amazing Game Factory</p>
+      <p>If you have any questions or need a support, send us a message!.</p>
+
+      <div class="visible-desktop" id="phones"> <img src="img/amazing_game_factory_email.png" alt=""> </div>
+    </div>
+    <!-- CONTACT FORM -->
+    <!-- <div class="span7" id="contact-form">
+
+    </div> -->
+  </div>
+</div>
+<!-- FOOTER -->
+<div class="footer container container-fluid">
+  <div id="copyright">&copy; Copyright 2022 <a href="#">Amazing Game Factory</a>. All Rights Reserved</div>
+  <div id="credits">Template by Trippo</a></div>
+</div>
+<script src="js/jquery-1.7.2.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/bootstrap-collapse.js"></script>
+<script src="js/bootstrap-scrollspy.js"></script>
+<script src="fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
+<script src="fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+<script src="js/init.js"></script>
+
+<!-- (function() {
+	if (!localStorage.getItem('cookieconsent')) {
+		document.body.innerHTML += '\
+		<div class="cookieconsent" style="position:fixed;padding:20px;left:0;bottom:0;background-color:#000;color:#FFF;text-align:center;width:100%;z-index:99999;">
+      We use cookies and other tracking technologies to improve your browsing experience on our website, to show you personalized content and targeted ads,
+        to analyze our website traffic, and to understand where our visitors are coming from.<br>By continuing to use this website, you agree to their use. 
+			<a href="#" style="color:#CCCCCC;">I Understand</a>
+		</div>
+		';
+		document.querySelector('.cookieconsent a').onclick = function(e) {
+			e.preventDefault();
+			document.querySelector('.cookieconsent').style.display = 'none';
+			localStorage.setItem('cookieconsent', true);
+		};
+	}
+})(); -->
+
+</body>
+</html>
