@@ -1,37 +1,81 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<title>Amazing Game Factory website</title>
-<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="img/favicon.ico" rel="shortcut icon" type="image/x-icon">
+<title>Amazing Game Factory</title>
 </head>
 
+<style>
+
+body 
+{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  background: url('img/bg.png') repeat-x;
+	background-color: #fff;
+}
+
+*
+{
+  box-sizing: border-box;
+}
+
+img 
+{
+  vertical-align: middle;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container
+{
+  /* position: relative; */
+  position: relative;
+}
+
+/* Container for image text */
+.caption-container
+{
+  text-align: center;
+  font-weight: bold;
+  background-color: rgb(0, 58, 112);
+  /* padding: 2px 2px; */
+  padding: 10px 10px;
+
+  color: white;
+  margin-bottom: 20px;
+  font-size: 24px;
+  /* height: 100px; */
+}
+
+</style>
 
 <body>
-<h1>Amazing Game Factory games:</h1>
 
-<a href="sticks/index.html">
-<h2>Amazing Sticks</h2>
-</a>
-<a href="sticks/index.html">
-<img src="img/zrzut1.jpg" alt="Amazing Sticks" style="width:640px;height:360x;">
-</a>
-<br>
+<h1 style="text-align:center">Amazing Game Factory</h1>
 
-<a href="snake/index.html">
-<h2>Amazing Snake</h2>
-</a>
-<a href="snake/index.html">
-<img src="img/zrzut2.jpg" alt="Amazing Snake" style="width:640px;height:360x;">
-</a>
-<br>
+<div class="caption-container">
+  <p id="caption"></p>
+</div>
 
-<a href="amazinghsk/index.html">
-<h2>Amazing HSK</h2>
-</a>
-<a href="amazinghsk/index.html">
-<img src="img/zrzut3.jpg" alt="Amazing HSK" style="width:640px;height:360x;">
-</a>
-<br>
+<div class="container" >
+  
+  <a href="amazinghsk/index.html">
+    <img src="img/amazing_hsk_1280x720.jpg" style="width:40%;display:flex;margin-left:auto;margin-right:auto;">
+  </a>
+  <br>
+  <a href="snake/index.html">
+    <img src="img/amazing_snake_1280x720.jpg" style="width:40%;display:flex;margin-left:auto;margin-right:auto;">
+  </a>
+  <br>
+  <a href="sticks/index.html">
+    <img src="img/amazing_sticks_1280x720.jpg" style="width:40%;display:flex;margin-left:auto;margin-right:auto;">
+  </a>
+</div>
 
+<script>
+
+</script>
+    
 </body>
 </html>
